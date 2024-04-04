@@ -25,13 +25,11 @@ public class LastNumberApp {
 			result = intArray[3];
 		System.out.println(result);
 		} catch (ArrayIndexOutOfBoundsException e){
-			System.err.println("Error: " + e.getMessage());
+			System.err.println("배열의 범위를 넘었습니다.");
 		}  catch (Exception e) {
 			e.printStackTrace();
 		} 
-		finally {
-			System.out.println("배열의 범위를 넘었습니다.");
-		}
+		
 	}
 
 }

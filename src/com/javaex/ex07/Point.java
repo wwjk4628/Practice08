@@ -15,6 +15,7 @@ public class Point {
 	// equals() 메소드를 작성하세요.
 	@Override
 	public boolean equals(Object obj) {
+		//	매개변수(비교대상) -> Point로 캐스팅
 		if (obj instanceof Point) {
 			// 전달 받은 파라미터 obj가 Point 인지 확인
 			// obj => Point로 캐스팅

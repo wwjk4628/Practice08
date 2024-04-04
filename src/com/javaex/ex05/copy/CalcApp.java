@@ -1,4 +1,4 @@
-package com.javaex.ex05;
+package com.javaex.ex05.copy;
 
 import java.util.Scanner;
 
@@ -22,20 +22,13 @@ public class CalcApp {
 			numLine = sc.nextLine();
 			
 				// split
-			if (numLine.equals("/q")) {
-				System.out.println("종료");
-				break;
-			} else {
 				mySplit = numLine.split(" ");
-			} 
-				
 			
-			
-				try {
 				myAdd.setValue(Integer.parseInt(mySplit[0]), Integer.parseInt(mySplit[2]));
 				myDiv.setValue(Integer.parseInt(mySplit[0]), Integer.parseInt(mySplit[2]));
 				myMul.setValue(Integer.parseInt(mySplit[0]), Integer.parseInt(mySplit[2]));
 				mySub.setValue(Integer.parseInt(mySplit[0]), Integer.parseInt(mySplit[2]));
+
 				if (mySplit[1].equals("+")) {
 					int result = myAdd.calculate();
 					System.out.println(result);
@@ -52,18 +45,9 @@ public class CalcApp {
 				} else {
 					System.out.println("알 수 없는 연산입니다.");
 				}
-				} catch(NumberFormatException e) {
-					System.err.println("숫자입력해주세요");
-				}
-				catch (ArrayIndexOutOfBoundsException e) {
-					System.err.println("범위에 맞게 입력해주세요");
-				}
-				
 			}
 		sc.close();
-	}
-			
 		}
 
-	
+	}
 
