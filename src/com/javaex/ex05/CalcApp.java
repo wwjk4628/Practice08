@@ -16,7 +16,7 @@ public class CalcApp {
 		String numLine = null;
 		String[] mySplit;
 		
-		while (numLine != "/ q") {
+		while (numLine != "/q") {
 			
 			System.out.println("숫자를 공백으로 구분해서 입력하세요");
 			numLine = sc.nextLine();
